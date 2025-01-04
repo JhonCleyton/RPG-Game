@@ -149,4 +149,4 @@ JC Bytes - Soluções em Tecnologia
 - GitHub: [github.com/jcbytes](https://github.com/JhonCleyton)
 
 ---
-Desenvolvido com ❤️ por JC Bytes - Soluções em Tecnologia
+Desenvolvido por JC Bytes - Soluções em Tecnologia
