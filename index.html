@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eldoria - RPG Game</title>
+    <style>
+        @font-face {
+            font-family: 'MedievalFont';
+            src: url('assets/fonts/medieval.ttf') format('truetype');
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background: #000;
+        }
+        
+        #gameCanvas {
+            display: block;
+            width: 100vw;
+            height: 100vh;
+        }
+        
+        .loading-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-family: 'MedievalFont', serif;
+            z-index: 1000;
+        }
+        
+        .loading-bar {
+            width: 300px;
+            height: 20px;
+            background: #333;
+            border: 2px solid #daa520;
+            border-radius: 10px;
+            margin-top: 20px;
+            overflow: hidden;
+        }
+        
+        .loading-progress {
+            width: 0%;
+            height: 100%;
+            background: linear-gradient(to right, #8b4513, #daa520);
+            transition: width 0.3s;
+        }
+        
+        .loading-text {
+            margin-top: 10px;
+            font-size: 18px;
+            color: #daa520;
+        }
+    </style>
+</head>
+<body>
+    <div id="loadingScreen" class="loading-screen">
+        <h1>Eldoria</h1>
+        <div class="loading-bar">
+            <div id="loadingProgress" class="loading-progress"></div>
+        </div>
+        <div id="loadingText" class="loading-text">Carregando...</div>
+    </div>
+    
+    <canvas id="gameCanvas"></canvas>
+    
+    <!-- Sistemas Base -->
+    <script src="js/systems/assetLoader.js"></script>
+    <script src="js/systems/inputSystem.js"></script>
+    <script src="js/systems/soundSystem.js"></script>
+    <script src="js/systems/timeSystem.js"></script>
+    
+    <!-- Sistemas de Jogo -->
+    <script src="js/systems/dialogSystem.js"></script>
+    <script src="js/systems/questSystem.js"></script>
+    <script src="js/systems/combatSystem.js"></script>
+    <script src="js/systems/inventorySystem.js"></script>
+    <script src="js/tutorial/tutorial.js"></script>
+    <script src="js/story/story.js"></script>
+    
+    <!-- Personagens -->
+    <script src="js/characters/player.js"></script>
+    <script src="js/characters/npc.js"></script>
+    
+    <!-- Cenas -->
+    <script src="js/scenes/mainMenu.js"></script>
+    <script src="js/scenes/gameScene.js"></script>
+    <script src="js/scenes/optionsScene.js"></script>
+    
+    <!-- UI -->
+    <script src="js/ui/gameUI.js"></script>
+    
+    <!-- Game -->
+    <script src="js/game.js"></script>
+</body>
+</html>

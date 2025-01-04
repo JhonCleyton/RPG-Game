@@ -1,0 +1,113 @@
+{
+    "forest_herbs": {
+        "title": "Healing Herbs",
+        "description": "Collect healing herbs from the Mystic Forest to help the village healer.",
+        "objectives": {
+            "collect_herbs": {
+                "description": "Collect blue healing herbs",
+                "target_amount": 5
+            },
+            "avoid_wolves": {
+                "description": "Return without being defeated by wolves",
+                "target_amount": 1
+            }
+        },
+        "rewards": {
+            "gold": 100,
+            "exp": 50,
+            "items": {
+                "healing_potion": 2
+            }
+        }
+    },
+    "guardian_essence": {
+        "title": "Trial of the Guardians",
+        "description": "Defeat the ancient guardians and collect their essence to prove your worth.",
+        "objectives": {
+            "defeat_guardians": {
+                "description": "Defeat ancient guardians",
+                "target_amount": 3
+            },
+            "collect_essence": {
+                "description": "Collect guardian essence",
+                "target_amount": 3
+            }
+        },
+        "rewards": {
+            "gold": 500,
+            "exp": 200,
+            "items": {
+                "guardian_amulet": 1
+            }
+        }
+    },
+    "spider_menace": {
+        "title": "Spider Menace",
+        "description": "Clear out the giant spiders that have been terrorizing travelers in the forest.",
+        "objectives": {
+            "kill_spiders": {
+                "description": "Defeat giant spiders",
+                "target_amount": 10
+            },
+            "destroy_nests": {
+                "description": "Destroy spider nests",
+                "target_amount": 3
+            }
+        },
+        "rewards": {
+            "gold": 300,
+            "exp": 150,
+            "items": {
+                "spider_silk_armor": 1
+            }
+        }
+    },
+    "lost_artifact": {
+        "title": "The Lost Artifact",
+        "description": "Find the ancient artifact hidden deep within the ruins.",
+        "objectives": {
+            "find_clues": {
+                "description": "Find ancient clues",
+                "target_amount": 4
+            },
+            "solve_puzzles": {
+                "description": "Solve ancient puzzles",
+                "target_amount": 3
+            },
+            "retrieve_artifact": {
+                "description": "Retrieve the artifact",
+                "target_amount": 1
+            }
+        },
+        "rewards": {
+            "gold": 1000,
+            "exp": 500,
+            "items": {
+                "ancient_artifact": 1,
+                "magic_scroll": 2
+            }
+        }
+    },
+    "forest_spirits": {
+        "title": "Forest Spirit Blessing",
+        "description": "Help the forest spirits and receive their blessing.",
+        "objectives": {
+            "purify_shrines": {
+                "description": "Purify corrupted shrines",
+                "target_amount": 5
+            },
+            "plant_seeds": {
+                "description": "Plant magical seeds",
+                "target_amount": 8
+            }
+        },
+        "rewards": {
+            "gold": 250,
+            "exp": 100,
+            "items": {
+                "spirit_blessing": 1,
+                "magic_seeds": 3
+            }
+        }
+    }
+}

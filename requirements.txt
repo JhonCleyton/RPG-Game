@@ -1,0 +1,9 @@
+# RPG Game Framework - JC Bytes
+# Requisitos do projeto
+
+pygame>=2.5.2
+numpy>=1.24.0
+pillow>=10.0.0  # Para processamento de imagens
+pytmx>=3.31     # Para carregar mapas Tiled
+pyyaml>=6.0.1   # Para configurações
+pytest>=7.4.0   # Para testes

@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    overflow: hidden;
+}
+
+#game-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#gameCanvas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000;
+}
+
+.menu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    min-width: 300px;
+}
+
+.menu h1 {
+    color: #ffd700;
+    font-size: 2.5em;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.menu h2 {
+    color: #fff;
+    font-size: 1.8em;
+    margin-bottom: 1.5rem;
+}
+
+button {
+    background-color: #4a4a4a;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    margin: 0.5rem;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+button:hover {
+    background-color: #666;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+#character-list {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0;
+}
+
+.character-option {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border-radius: 5px;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.character-option:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.character-option.selected {
+    background-color: rgba(255, 215, 0, 0.3);
+    border: 2px solid #ffd700;
+}
+
+.character-option h3 {
+    color: #ffd700;
+    margin-bottom: 0.5rem;
+}
+
+.character-option p {
+    font-size: 0.9em;
+    margin-bottom: 1rem;
+}
+
+.character-option ul {
+    list-style: none;
+    text-align: left;
+}
+
+.character-option li {
+    margin: 0.3rem 0;
+}
+
+#game-hud {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+}
+
+.bar {
+    width: 200px;
+    height: 20px;
+    background-color: #333;
+    margin: 5px 0;
+    border-radius: 10px;
+    position: relative;
+}
+
+.bar-label {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 0.8em;
+    z-index: 1;
+}
+
+.bar-fill {
+    height: 100%;
+    width: 100%;
+    background-color: #ff0000;
+    border-radius: 10px;
+    transition: width 0.3s;
+}
+
+#health-bar .bar-fill {
+    background-color: #ff3333;
+}
+
+#mana-bar .bar-fill {
+    background-color: #3333ff;
+}
+
+#exp-bar .bar-fill {
+    background-color: #33ff33;
+}
+
+#player-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+    font-size: 0.9em;
+}
+
+#pause-menu {
+    background-color: rgba(0, 0, 0, 0.95);
+}

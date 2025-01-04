@@ -1,0 +1,146 @@
+{
+    "weapons": {
+        "wooden_sword": {
+            "name": "Wooden Sword",
+            "description": "A basic training sword.",
+            "type": "weapon",
+            "slot": "weapon",
+            "stats": {
+                "damage": 5,
+                "speed": 1.0
+            },
+            "value": 10
+        },
+        "iron_sword": {
+            "name": "Iron Sword",
+            "description": "A standard iron sword.",
+            "type": "weapon",
+            "slot": "weapon",
+            "stats": {
+                "damage": 10,
+                "speed": 1.2
+            },
+            "value": 50
+        },
+        "magic_staff": {
+            "name": "Magic Staff",
+            "description": "A staff imbued with magical power.",
+            "type": "weapon",
+            "slot": "weapon",
+            "stats": {
+                "damage": 8,
+                "magic": 15,
+                "speed": 0.8
+            },
+            "value": 100
+        }
+    },
+    "armor": {
+        "leather_armor": {
+            "name": "Leather Armor",
+            "description": "Basic protective gear.",
+            "type": "armor",
+            "slot": "armor",
+            "stats": {
+                "defense": 5,
+                "speed": -0.1
+            },
+            "value": 30
+        },
+        "chainmail": {
+            "name": "Chainmail",
+            "description": "Flexible metal armor.",
+            "type": "armor",
+            "slot": "armor",
+            "stats": {
+                "defense": 10,
+                "speed": -0.2
+            },
+            "value": 80
+        },
+        "mage_robe": {
+            "name": "Mage Robe",
+            "description": "Enchanted robes that boost magical power.",
+            "type": "armor",
+            "slot": "armor",
+            "stats": {
+                "defense": 3,
+                "magic": 10,
+                "mana": 20
+            },
+            "value": 120
+        }
+    },
+    "consumables": {
+        "health_potion": {
+            "name": "Health Potion",
+            "description": "Restores 50 HP.",
+            "type": "consumable",
+            "effects": [
+                {
+                    "stat": "health",
+                    "value": 50
+                }
+            ],
+            "value": 20
+        },
+        "mana_potion": {
+            "name": "Mana Potion",
+            "description": "Restores 30 MP.",
+            "type": "consumable",
+            "effects": [
+                {
+                    "stat": "mana",
+                    "value": 30
+                }
+            ],
+            "value": 15
+        },
+        "strength_potion": {
+            "name": "Strength Potion",
+            "description": "Temporarily increases strength by 5.",
+            "type": "consumable",
+            "effects": [
+                {
+                    "stat": "strength",
+                    "value": 5,
+                    "duration": 60
+                }
+            ],
+            "value": 40
+        }
+    },
+    "accessories": {
+        "ring_of_health": {
+            "name": "Ring of Health",
+            "description": "Increases maximum HP.",
+            "type": "accessory",
+            "slot": "accessory",
+            "stats": {
+                "max_health": 20
+            },
+            "value": 100
+        },
+        "magic_amulet": {
+            "name": "Magic Amulet",
+            "description": "Increases magic power and mana.",
+            "type": "accessory",
+            "slot": "accessory",
+            "stats": {
+                "magic": 5,
+                "max_mana": 15
+            },
+            "value": 150
+        },
+        "speed_boots": {
+            "name": "Speed Boots",
+            "description": "Increases movement speed.",
+            "type": "accessory",
+            "slot": "accessory",
+            "stats": {
+                "speed": 0.3
+            },
+            "value": 200
+        }
+    }
+}

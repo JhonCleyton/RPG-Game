@@ -1,0 +1,204 @@
+{
+    "forest_entrance": {
+        "initial": "welcome",
+        "nodes": {
+            "welcome": {
+                "text": "Welcome, traveler. The Mystic Forest is a dangerous place. Are you prepared for what lies ahead?",
+                "options": [
+                    {
+                        "text": "Yes, I'm ready.",
+                        "next": "quest_offer"
+                    },
+                    {
+                        "text": "Tell me more about the forest.",
+                        "next": "forest_info"
+                    },
+                    {
+                        "text": "No, I'll come back later.",
+                        "next": "goodbye"
+                    }
+                ]
+            },
+            "forest_info": {
+                "text": "The Mystic Forest is home to many dangerous creatures. Wolves prowl the shadows, and giant spiders weave their webs between the ancient trees. But it also holds many treasures and rare herbs for those brave enough to seek them.",
+                "options": [
+                    {
+                        "text": "I see. Can you help me?",
+                        "next": "quest_offer"
+                    },
+                    {
+                        "text": "I should prepare more.",
+                        "next": "goodbye"
+                    }
+                ]
+            },
+            "quest_offer": {
+                "text": "I need someone to collect some healing herbs for the village. The herbs grow deep in the forest, but be careful of the wolves. Would you help us?",
+                "options": [
+                    {
+                        "text": "I'll help.",
+                        "next": "quest_accept",
+                        "action": "start_quest:forest_herbs"
+                    },
+                    {
+                        "text": "Not interested.",
+                        "next": "goodbye"
+                    }
+                ]
+            },
+            "quest_accept": {
+                "text": "Thank you! Look for the herbs near the old trees. They have bright blue flowers. Come back to me when you've collected 5 of them.",
+                "options": [
+                    {
+                        "text": "I'll start right away.",
+                        "next": "goodbye"
+                    }
+                ]
+            },
+            "quest_incomplete": {
+                "text": "Have you found the herbs yet? Remember, they grow near the old trees and have bright blue flowers.",
+                "options": [
+                    {
+                        "text": "Still looking.",
+                        "next": "goodbye"
+                    }
+                ]
+            },
+            "quest_complete": {
+                "text": "Excellent work! These herbs will help many people. Here's your reward.",
+                "options": [
+                    {
+                        "text": "Thank you.",
+                        "next": "goodbye",
+                        "action": "complete_quest:forest_herbs"
+                    }
+                ]
+            },
+            "goodbye": {
+                "text": "Stay safe in the forest. Come back if you need any help.",
+                "options": [
+                    {
+                        "text": "Goodbye.",
+                        "next": null
+                    }
+                ]
+            }
+        }
+    },
+    "dungeon_ghost": {
+        "initial": "welcome",
+        "nodes": {
+            "welcome": {
+                "text": "Who dares enter these ancient ruins? The treasures here are protected by powerful magic.",
+                "options": [
+                    {
+                        "text": "I seek the ancient artifact.",
+                        "next": "artifact_info"
+                    },
+                    {
+                        "text": "Just exploring.",
+                        "next": "warning"
+                    },
+                    {
+                        "text": "I'll leave.",
+                        "next": "goodbye"
+                    }
+                ]
+            },
+            "artifact_info": {
+                "text": "Ah, the artifact... Many have sought it, but none have survived its guardians. Are you truly prepared to face such danger?",
+                "options": [
+                    {
+                        "text": "Yes, I am ready.",
+                        "next": "quest_offer"
+                    },
+                    {
+                        "text": "Tell me more about the guardians.",
+                        "next": "guardian_info"
+                    },
+                    {
+                        "text": "Perhaps not.",
+                        "next": "goodbye"
+                    }
+                ]
+            },
+            "guardian_info": {
+                "text": "The guardians are ancient constructs, powered by magic that has long been forgotten. They are relentless in their duty to protect the artifact.",
+                "options": [
+                    {
+                        "text": "I'll take the challenge.",
+                        "next": "quest_offer"
+                    },
+                    {
+                        "text": "Too dangerous.",
+                        "next": "goodbye"
+                    }
+                ]
+            },
+            "warning": {
+                "text": "Be warned, these ruins are not for casual exploration. Many dangers lurk in the shadows.",
+                "options": [
+                    {
+                        "text": "I understand the risk.",
+                        "next": "quest_offer"
+                    },
+                    {
+                        "text": "I'll come back later.",
+                        "next": "goodbye"
+                    }
+                ]
+            },
+            "quest_offer": {
+                "text": "If you truly wish to claim the artifact, you must first prove your worth. Defeat the guardians and bring me their essence.",
+                "options": [
+                    {
+                        "text": "I accept this task.",
+                        "next": "quest_accept",
+                        "action": "start_quest:guardian_essence"
+                    },
+                    {
+                        "text": "Not now.",
+                        "next": "goodbye"
+                    }
+                ]
+            },
+            "quest_accept": {
+                "text": "Very well. Defeat three guardians and collect their essence. Only then will the path to the artifact be revealed.",
+                "options": [
+                    {
+                        "text": "I'll begin now.",
+                        "next": "goodbye"
+                    }
+                ]
+            },
+            "quest_incomplete": {
+                "text": "You have not yet proven your worth. Return when you have collected the essence of three guardians.",
+                "options": [
+                    {
+                        "text": "I'll keep trying.",
+                        "next": "goodbye"
+                    }
+                ]
+            },
+            "quest_complete": {
+                "text": "You have proven your strength and courage. The path to the artifact is now open. But beware, the final guardian is the most powerful of all.",
+                "options": [
+                    {
+                        "text": "Thank you.",
+                        "next": "goodbye",
+                        "action": "complete_quest:guardian_essence"
+                    }
+                ]
+            },
+            "goodbye": {
+                "text": "May fortune favor the brave... or the wise who know when to retreat.",
+                "options": [
+                    {
+                        "text": "Farewell.",
+                        "next": null
+                    }
+                ]
+            }
+        }
+    }
+}
